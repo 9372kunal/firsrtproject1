@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login/logout</title>
+
+<style>
+    .btn {
+        font-family: cursive;
+        margin: 0px 9px;
+        background-color: rgb(60, 17, 201);
+        color: rgb(91, 6, 6);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .block {
+        background-color: rgb(118, 110, 110);
+        border: 2px solid black;
+        position: absolute;
+        margin: 100px 90px;
+        padding: 10px;
+        width: 40%;
+        top: 5%;
+        left: 20%;
+        border-radius: 28px;
+    }
+    .block h1{
+        font-family: cursive;
+        position:relative;
+        padding-left: 110px;
+        color: rgb(11, 11, 20);
+        text-align: center;
+    }
+
+    .forum input {
+        font-family: cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .block button {
+        display: block;
+        width: 65%;
+        margin: 20px auto;
+    } 
+    a{
+        text-decoration: none;
+        color: rgb(64, 3, 3);
+    }
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    a:hover{
+        color: rgb(38, 65, 27);
+    }
+    h1{
+        text-align-last: center
+        text-align-center;
+        font-weight: 900;
+        font-variant: small-caps;
+        font-stretch: narrower;
+        font-variant-ligatures: historical-ligatures;
+        font-kerning: none;
+        text-rendering: geometricPrecision;
+        stroke-dasharray: 50px;
+        display: block;
+        font-display: 60px;
+    }
+</style>
+
+</head>
+<body background="https://s3images.zee5.com/wp-content/uploads/2023/04/025450k7ao98ooy2add77o.jpeg">
+    
+    <div class="block">
+        <h1>  kal ko aao </h1>
+        <form>
+            <div class="forum">
+                <input type="email" id="memail" placeholder="Enter your Email Id">
+            </div>
+            <div class="forum">
+                <input type="password" id="mpassword" placeholder="password">
+            </div>
+            <button class="btn" onclick="final_submit()">Log in</button>
+            <div>
+               <p>Don't have an account?<a href="mainsignup.html" target="_blank"><b>Sign Up</b></a></p>
+            </div>
+        </form>
+    </div>
+    <span id="result"></span>
+    <script>
+        function final_submit()
+        {
+            var memail=document.getElementById('memail').value;
+            var mpassword=document.getElementById('mpassword').value;
+            var  email=localStorage.getItem('myemail');
+            var password=localStorage.getItem('mypassword')
+          if(memail=='')
+          {
+              alert("Complete The Registration Details")
+          }
+
+          if(memail==email && mpassword==password)
+          {
+             alert('Successfully logged in');
+             let win=window.open('final project1.html');
+          }
+          else{
+               alert('Invalid Email Id And Password');
+          }
+        }
+    </script>
+</body>
+
+</html>
