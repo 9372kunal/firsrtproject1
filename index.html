@@ -7,9 +7,94 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>hello kunal gupta welcome to html</h1>
+    
+      <!--  <h1>hello kunal gupta welcome to html</h1> -->
+        <style>
+        body{
+            padding: 150px;
+            border: 100px;
+            margin: 100px;
+        }
+        h1{
+            text-align: center;
+            font-weight: 900;
+            color: black;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box{
+            float: left;
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid black;
+            background-color: blanchedalmond;
+        }
+        /* clear property isse float hat jata h  */
+        .cleared{
+            clear: right;
+        }
+        /*flex container */
+        .flex-container{
+            display:flex;
+            align-content: space-between;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            flex-flow: column wrap;
+
+        }
+        .flex-item{
+            width: 75px;
+            height: 75px;
+            background-color: aquamarine;
+            border: 2px solid darkcyan;
+            text-align: center;
+            font-size: 2em;
+            color: beige;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        #flex-item-1{
+            background-color: rgb(6, 1, 11);
+           flex: 3 240px;
+        }
+        #flex-item-2{
+            background-color: rgb(115, 15, 33);
+            flex-basis: 200px;
+            flex-shrink: 2;
+            align-self: center;
+        }
+        #flex-item-3{
+            background-color: rgb(44, 135, 88);
+            order: 5;
+            flex-grow: 3;
+        }
+        #flex-item-4{
+            background-color: rgb(58, 101, 114);
+            order: 3;
+        }
+        #flex-item-5{
+            background-color: blueviolet;
+        }
+        </style>
+</head>
+<body>
+    <h1>float property</h1>
+    <img   class="box" src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="user image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora fuga quas labore, ducimus aliquam accusantium, nisi odit ullam doloribus suscipit consectetur nihil expedita? Corporis architecto, reiciendis pariatur repellat aperiam expedita dignissimos a cupiditate dolore debitis incidunt assumenda asperiores?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in possimus et, odio perferendis corrupti itaque veniam error aliquid ipsa.</p>
+    <br>
+    <p class="cleared">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem eos facere aliquam distinctio iusto ad amet? Recusandae dolorem, rem, ab consequuntur autem rerum qui assumenda facilis, deserunt eveniet delectus quae.</p>
+    <h4>Skills</h4>
+    <ul>
+        <li>problem solving</li>
+        <li>compitative programming</li>
+        <li>DSA</li>
+        <li> frontend development</li>
+    </ul>
+    <br>
 
         <script src="" async defer></script>
     </body>
